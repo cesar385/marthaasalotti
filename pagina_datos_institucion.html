@@ -1,0 +1,140 @@
+<!-- pagina_datos_institucion.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Institución - Institución Educativa</title>
+    <style>
+        /* Your existing styles here or link to an external CSS file */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: #3498db;
+            font-size: 1.5em;
+        }
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap; /* Allow sections to wrap to the next line */
+            margin: 0 -10px; /* Add negative margin to offset margin on sections */
+        }
+        section {
+            flex: 1;
+            margin: 10px; /* Add margin to create space between sections */
+            background-color: #fff;
+            padding: 20px;
+
+            min-width: 30px;
+        }
+        section:hover {
+            background-color: #ffffff;
+        }
+        h2 {
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #34495e;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8em;
+        }
+
+        .go-back-btn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://isfdsalotti-cba.infd.edu.ar/sitio/wp-content/uploads/2018/11/logo.png" alt="Logo de la Institución">
+        <h1> Instituto Superior de Formación Docente "Martha Alcira Salotti"- Extensión HUINCA RENANCÓ</h1>
+    </header>
+
+    <div class="section-container">
+        <a href="pagina_inicio.html"> <!-- Add a new page for "Inicio" -->
+            <section>
+                <h2>Inicio</h2>
+            </section>
+        </a>
+
+        <a href="pagina_datos_institucion.html">
+            <section>
+                <h2>Datos de la Institución</h2>
+            </section>
+        </a>
+
+        <a href="pagina_oferta_academica.html">
+            <section>
+                <h2>Oferta Académica</h2>
+            </section>
+        </a>
+
+        <a href="pagina_eventos_noticias.html">
+            <section>
+                <h2>Eventos y Noticias</h2>
+            </section>
+        </a>
+
+        <a href="pagina_aula_virtual.html">
+            <section>
+                <h2>Aula Virtual</h2>
+            </section>
+        </a>
+
+        <a href="pagina_contacto.html">
+            <section>
+                <h2>Contacto</h2>
+            </section>
+        </a>
+    </div>
+
+    <div class="section-container">
+        <!-- Content specific to Datos de la Institución goes here -->
+        <section>
+            <h2>Datos de la Institución</h2>
+            <p>Insert your content here...</p>
+        </section>
+    </div>
+
+    <button class="go-back-btn" onclick="goBack()">Volver</button>
+
+    <footer>
+        <p>&copy; 2023 Institución Educativa</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

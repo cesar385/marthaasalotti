@@ -1,0 +1,142 @@
+<!-- pagina_inicio.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Institución Educativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: #3498db;
+            font-size: 1.5em;
+        }
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+        section {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+            min-width: 50px;
+        }
+        section:hover {
+            background-color: #ecf0f1;
+        }
+        h2 {
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        .image-container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            width: 540%;
+            max-width: 14000px;
+            margin: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #34495e;
+            color: #fff;
+            width: 100%;
+            font-size: 0.8em;
+            margin-top: 20px;
+            display: none; /* Initially hide the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://isfdsalotti-cba.infd.edu.ar/sitio/wp-content/uploads/2018/11/logo.png" alt="Logo de la Institución">
+        <h1> Instituto Superior de Formación Docente "Martha Alcira Salotti"- Extensión HUINCA RENANCÓ</h1>
+    </header>
+
+    <div class="section-container">
+        <!-- Content specific to Inicio goes here -->
+        <section>
+            <h2>Inicio</h2>
+            <p>Insert your content here...</p>
+            <div class="image-container">
+                <img src="https://www.huincarenanco.gob.ar/sites/default/files/styles/imagen_destacada/public/fachada_iset.jpg?itok=XuMuxb7o" alt="Foto del Instituto">
+                <img src="https://www.huincarenanco.gob.ar/sites/default/files/img-20190121-wa0015_0.jpg" alt="Otra Foto del Instituto"> 
+            </div>
+        </section>
+
+        <!-- Other sections remain unchanged -->
+        <a href="pagina_datos_institucion.html">
+            <section>
+                <h2>Datos de la Institución</h2>
+            </section>
+        </a>
+
+        <a href="pagina_oferta_academica.html">
+            <section>
+                <h2>Oferta Académica</h2>
+            </section>
+        </a>
+
+        <a href="pagina_eventos_noticias.html">
+            <section>
+                <h2>Eventos y Noticias</h2>
+            </section>
+        </a>
+
+        <a href="pagina_aula_virtual.html">
+            <section>
+                <h2>Aula Virtual</h2>
+            </section>
+        </a>
+
+        <a href="pagina_contacto.html">
+            <section>
+                <h2>Contacto</h2>
+            </section>
+        </a>
+    </div>
+
+    <footer id="site-footer">
+        <p>&copy; 2023 Institución Educativa</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('site-footer');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var documentHeight = document.body.scrollHeight;
+
+            if (scrollPosition >= documentHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
